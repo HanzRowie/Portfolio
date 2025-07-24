@@ -23,58 +23,11 @@
   {% endblock%}
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background position-relative overflow-hidden" data-aos="fade-in">
-
-      <!-- Animated background shapes -->
-      <div class="hero-bg-shapes position-absolute w-100 h-100 top-0 start-0" style="pointer-events:none;z-index:0;">
-        <span class="bubble" style="left:10%;top:20%;width:60px;height:60px;"></span>
-        <span class="bubble" style="left:80%;top:30%;width:40px;height:40px;"></span>
-        <span class="bubble" style="left:50%;top:70%;width:80px;height:80px;"></span>
-        <span class="bubble" style="left:30%;top:60%;width:30px;height:30px;"></span>
-        <span class="bubble" style="left:70%;top:80%;width:50px;height:50px;"></span>
-      </div>
-
-      <img src="{% static 'assets/img/image3.jpg' %}" alt="" data-aos="fade-in" class="hero-bg-img position-absolute w-100 h-100 top-0 start-0" style="object-fit:cover;z-index:1;">
-      <div class="hero-gradient position-absolute w-100 h-100 top-0 start-0" style="background:linear-gradient(135deg,rgba(20,157,221,0.45) 0%,rgba(4,11,20,0.7) 100%);z-index:2;"></div>
-
-      <div class="container position-relative d-flex flex-column align-items-center justify-content-center text-center py-5" style="z-index:3;">
-        <div class="mb-4">
-          <img src="{% static 'assets/img/my-profile-img.jpg' %}" alt="Profile" class="rounded-circle shadow-lg border border-4 border-primary" style="width:120px;height:120px;object-fit:cover;">
-        </div>
-        <h2 class="glow-text mb-2">{{ name }}</h2>
-        <div class="d-flex align-items-center justify-content-center mb-3">
-          <i class="bi bi-lightning-charge-fill text-accent fs-3 me-2"></i>
-          <span class="fs-4 fw-semibold text-light">{{ occupation }}</span>
-        </div>
-        <p class="lead text-light mb-4">I'm <span class="typed" data-typed-items="">{{occupation}}</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <a href="#contact" class="btn btn-lg btn-primary mt-2 shadow px-5 py-2 fs-5">Let's Connect</a>
-        <div class="social-links mt-4 d-flex justify-content-center gap-3">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.facebook.com/hanz.gurung" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/hanzrowiegurung/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/hanzrowiegurung/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-
-      <style>
-        .hero-bg-shapes .bubble {
-          position: absolute;
-          background: linear-gradient(135deg, var(--accent-color), #00e0d3, #ff6a00);
-          opacity: 0.18;
-          border-radius: 50%;
-          animation: floatBubble 8s infinite ease-in-out alternate;
-        }
-        .hero-bg-shapes .bubble:nth-child(2) { animation-delay: 2s; }
-        .hero-bg-shapes .bubble:nth-child(3) { animation-delay: 4s; }
-        .hero-bg-shapes .bubble:nth-child(4) { animation-delay: 1s; }
-        .hero-bg-shapes .bubble:nth-child(5) { animation-delay: 3s; }
-        @keyframes floatBubble {
-          0% { transform: translateY(0) scale(1); }
-          100% { transform: translateY(-40px) scale(1.1); }
-        }
-      </style>
-    </section><!-- /Hero Section -->
+   
+  {% block herosection %}
+     {% include "herosection.html" %}
+  
+  {% endblock %}
 
     <!-- About Section -->
     <section id="about" class="about section" data-aos="fade-up">
