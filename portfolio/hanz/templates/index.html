@@ -45,85 +45,9 @@
 
 {% endblock %}
 
-    <!-- Services Section -->
-    <section id="services" class="services section" data-aos="fade-up">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item card p-4 shadow h-100">
-              <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">{{title1}}</a></h4>
-                <p class="description">{{description1}}</p>
-              </div>
-            </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item card p-4 shadow h-100">
-              <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">{{title2}}</a></h4>
-                <p class="description">{{description2}}</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item card p-4 shadow h-100">
-              <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">{{title3}}</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item card p-4 shadow h-100">
-              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">{{title4}}</a></h4>
-                <p class="description">{{description4}}</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item card p-4 shadow h-100">
-              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">{{title5}}</a></h4>
-                <p class="description">{{description5}}</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item card p-4 shadow h-100">
-              <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-              <div>
-                <h4 class="title"><a href="service-details.html" class="stretched-link">{{title6}}</a></h4>
-                <p class="description">{{description6}}</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
+{% block servicessection %}
+    {% include "services.html" %}
+{% endblock %}
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background" data-aos="fade-up">
