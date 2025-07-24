@@ -1,0 +1,76 @@
+{% load static%}
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background position-relative overflow-hidden" data-aos="fade-up">
+      <!-- Background accent shapes -->
+      <div class="skills-bg-shapes position-absolute w-100 h-100 top-0 start-0" style="pointer-events:none;z-index:0;">
+        <span class="bubble" style="left:15%;top:30%;width:40px;height:40px;"></span>
+        <span class="bubble" style="left:75%;top:60%;width:60px;height:60px;"></span>
+        <span class="bubble" style="left:40%;top:80%;width:30px;height:30px;"></span>
+      </div>
+      <!-- Section Title -->
+      <div class="container section-title position-relative" data-aos="fade-up" style="z-index:2;">
+        <h2>Skills</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100" style="z-index:2;">
+        <div class="row skills-content skills-animation g-4">
+          <div class="col-lg-6">
+            <div class="card glassmorph shadow-lg p-4 mb-4">
+              <div class="progress mb-4">
+                <span class="skill d-flex align-items-center"><i class="bi bi-filetype-html text-danger fs-4 me-2"></i>HTML <i class="val ms-auto">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--progress-width:100%"></div>
+                </div>
+              </div>
+              <div class="progress mb-4">
+                <span class="skill d-flex align-items-center"><i class="bi bi-filetype-css text-primary fs-4 me-2"></i>CSS <i class="val ms-auto">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--progress-width:90%"></div>
+                </div>
+              </div>
+              <div class="progress mb-4">
+                <span class="skill d-flex align-items-center"><i class="bi bi-filetype-js text-warning fs-4 me-2"></i>JavaScript <i class="val ms-auto">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="--progress-width:75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card glassmorph shadow-lg p-4 mb-4">
+              <div class="progress mb-4">
+                <span class="skill d-flex align-items-center"><i class="bi bi-git text-danger fs-4 me-2"></i>{{skills1}} <i class="val ms-auto">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="--progress-width:80%"></div>
+                </div>
+              </div>
+              <div class="progress mb-4">
+                <span class="skill d-flex align-items-center"><i class="bi bi-database-fill-gear text-info fs-4 me-2"></i>{{skills2}} <i class="val ms-auto">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--progress-width:90%"></div>
+                </div>
+              </div>
+              <div class="progress mb-4">
+                <span class="skill d-flex align-items-center"><i class="bi bi-brush text-secondary fs-4 me-2"></i>Photoshop <i class="val ms-auto">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="--progress-width:55%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        .skills-bg-shapes .bubble {
+          position: absolute;
+          background: linear-gradient(135deg, var(--accent-color), #00e0d3, #ff6a00);
+          opacity: 0.10;
+          border-radius: 50%;
+          animation: floatBubble 10s infinite ease-in-out alternate;
+        }
+        .skills-bg-shapes .bubble:nth-child(2) { animation-delay: 3s; }
+        .skills-bg-shapes .bubble:nth-child(3) { animation-delay: 5s; }
+      </style>
+    </section><!-- /Skills Section -->
