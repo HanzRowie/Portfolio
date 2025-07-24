@@ -1,0 +1,51 @@
+{% load static%}
+  <!-- About Section -->
+    <section id="about" class="about section" data-aos="fade-up">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>{{about}}</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center align-items-center">
+          <div class="col-lg-4 position-relative">
+            <div class="about-img-card glassmorph shadow-lg rounded-4 p-0 overflow-hidden position-relative">
+              <img src="assets/img/1.jpg" class="img-fluid rounded-4 w-100" alt="">
+              <span class="badge bg-primary position-absolute top-0 start-0 m-3 fs-6 px-3 py-2 shadow">It's Me!</span>
+              <div class="about-img-accent position-absolute top-0 start-0 w-100" style="height:8px; background: linear-gradient(90deg, var(--accent-color), #00e0d3, #ff6a00);"></div>
+            </div>
+          </div>
+          <div class="col-lg-8 content card p-4 glassmorph shadow-lg border-0">
+            <h2 class="mb-3"><i class="bi bi-person-circle me-2 text-primary"></i>UI/UX Designer &amp; Web Developer</h2>
+            <blockquote class="blockquote fst-italic py-2 px-3 mb-3 border-start border-4 border-primary bg-light bg-opacity-25">
+              <p>"Driven by a problem-solving mindset, I enjoy turning ideas into efficient code and continuously strive to improve my skills through practical projects and learning. I'm comfortable working independently or in a team and committed to writing clean, well-documented code that follows industry best practices."</p>
+            </blockquote>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-cake2 text-accent me-2"></i> <strong>Birthday:</strong> <span>{{Birthday}}</span></li>
+                  <li class="mb-2"><i class="bi bi-globe2 text-accent me-2"></i> <strong>Website:</strong> <span>www.hanz.com</span></li>
+                  <li class="mb-2"><i class="bi bi-telephone text-accent me-2"></i> <strong>Phone:</strong> <span>{{email}}</span></li>
+                  <li class="mb-2"><i class="bi bi-geo-alt text-accent me-2"></i> <strong>City:</strong> <span>{{city}}</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2"><i class="bi bi-hourglass-split text-accent me-2"></i> <strong>Age:</strong> <span>{{Age}}</span></li>
+                  <li class="mb-2"><i class="bi bi-mortarboard text-accent me-2"></i> <strong>Degree:</strong> <span>{{Degree}}</span></li>
+                  <li class="mb-2"><i class="bi bi-envelope-at text-accent me-2"></i> <strong>Email:</strong> <span>{{email}}</span></li>
+                  <li class="mb-2"><i class="bi bi-briefcase text-accent me-2"></i> <strong>Freelance:</strong> <span>{{Freelance}}</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <i class="bi bi-stars text-warning fs-3 me-2"></i>
+              <span class="fw-semibold">Always learning, always building.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
